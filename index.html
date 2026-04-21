@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hoàng Hiếu | Portfolio</title>
+    <style>
+        /* CSS Cơ bản giúp trang web gọn gàng, hiện đại */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .links a:hover {
+            background: #1a252f;
+        }
+
+        .links a.github {
+            background: #333;
+        }
+
+        .links a.linkedin {
+            background: #0077b5;
+        }
+
+        .section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #e8f4f8;
+            color: #2980b9;
+            padding: 8px 15px;
+            margin: 5px 5px 5px 0;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .project {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.4em;
+        }
+
+        .project-links a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nguyễn Hoàng Hiếu</h1>
+        <div class="subtitle">Sinh viên Khoa học dữ liệu | Định hướng Data Scientist</div>
+        <p>Đam mê giải quyết các bài toán thực tế thông qua dữ liệu, với kinh nghiệm xây dựng Hệ thống gợi ý và Đồ thị
+            tri thức.</p>
+        <div class="links">
+            <a href="https://github.com/NguyenHoangHieu-ue" target="_blank" class="github">GitHub</a>
+            <a href="https://www.linkedin.com/in/hieunh155/" target="_blank" class="linkedin">LinkedIn</a>
+        </div>
+    </header>
+
+    <div class="section">
+        <h2>Giới thiệu bản thân</h2>
+        <p>Xin chào, tôi là Hiếu, hiện đang là sinh viên năm 3 chuyên ngành Khoa học dữ liệu tại Đại học Sư phạm TP.HCM
+            (GPA 3.2/4.0). Tôi có thế mạnh trong việc vận dụng thuật toán Machine Learning để xử lý dữ liệu phức tạp.
+            Đặc biệt, tôi rất thích làm việc với các hệ quản trị cơ sở dữ liệu đa mô hình (Neo4j, MongoDB) và xử lý ngôn
+            ngữ tự nhiên (NLP) để tạo ra những sản phẩm có tính ứng dụng cao.</p>
+    </div>
+
+    <div class="section">
+        <h2>Kỹ năng công nghệ</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>SQL / PostgreSQL</span>
+            <span>Machine Learning</span>
+            <span>Pandas & NumPy</span>
+            <span>Scikit-learn</span>
+            <span>Neo4j (Graph DB)</span>
+            <span>MongoDB</span>
+            <span>FastAPI</span>
+            <span>Git / GitHub</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Dự án tiêu biểu</h2>
+
+        <div class="project">
+            <h3>Hybrid Recommendation System</h3>
+            <p><strong>Công nghệ:</strong> Python, SQL Server, TF-IDF, SVD</p>
+            <p>Hệ thống gợi ý lai kết hợp giữa Content-based và Collaborative Filtering nhằm giải quyết bài toán dữ liệu
+                cực kỳ thưa (sparsity lên tới 99.92%).</p>
+            <ul>
+                <li>Sử dụng TF-IDF để vector hóa thông tin sản phẩm và SVD để trích xuất đặc trưng hành vi người dùng.
+                </li>
+                <li>Khắc phục thành công vấn đề "Cold Start" cho các sản phẩm mới.</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/nguyenhoanghieu-ue/hybrid_recommendation_system" target="_blank">Xem Source
+                    Code & README trên GitHub &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>STEM Scientific Diagram Knowledge Graph (AI2D-KG)</h3>
+            <p><strong>Công nghệ:</strong> Python, Neo4j, MongoDB, FastAPI</p>
+            <p>Dự án trích xuất thông tin từ 1,000 biểu đồ khoa học không có cấu trúc và chuyển hóa thành Đồ thị tri
+                thức (Knowledge Graph).</p>
+            <ul>
+                <li>Thiết kế hệ thống lưu trữ đa mô hình kết hợp Neo4j (quan hệ đồ thị), MongoDB (metadata) và
+                    PostgreSQL.</li>
+                <li>Xây dựng RESTful API bằng FastAPI để truy vấn trực tiếp cấu trúc đồ thị.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Chứng chỉ đào tạo</h2>
+        <ul>
+            <li><strong>Career Essentials in Generative AI</strong> (Microsoft & LinkedIn)</li>
+            <li><strong>IBM Data Science Professional</strong> (Đang hoàn thành trên Coursera)</li>
+            <li><strong>What Is Generative AI?</strong> (LinkedIn Learning)</li>
+            <li><strong>Learning Microsoft 365 Copilot for Work</strong> (LinkedIn Learning)</li>
+            <li><strong>Ethics in the Age of Generative AI</strong> (LinkedIn Learning)</li>
+            <li><strong>Your Top AI Questions Answered</strong> (LinkedIn Learning)</li>
+            <li><strong>Everyday AI Concepts</strong> (LinkedIn Learning)</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nguyễn Hoàng Hiếu. Được xây dựng để phục vụ đam mê dữ liệu.</p>
+    </footer>
+
+</body>
+
+</html>
